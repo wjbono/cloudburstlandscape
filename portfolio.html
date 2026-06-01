@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Burst Landscape LLC | Portfolio</title>
+  <meta name="description" content="Cloud Burst Landscape LLC designs, builds, and maintains premium outdoor spaces with a modern, high-contrast aesthetic." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Cloud Burst Landscape LLC Home">
+        <img src="images/logo.jpg" alt="Cloud Burst Landscape LLC logo" />
+      </a>
+	  <button class="mobile-menu-toggle" type="button" aria-label="Open navigation">
+		☰
+	  </button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="">Home</a>
+<a href="services.html" class="">Services</a>
+<a href="portfolio.html" class="active">Portfolio</a>
+<a href="about.html" class="">About</a>
+<a href="contact.html" class="">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="contact.html">Get a Quote</a>
+    </div>
+  </header>
+
+  <section class="hero" style="--hero-image:url('images/hero-portfolio.jpg')">
+    <div class="hero-content">
+      <div class="kicker">Portfolio</div>
+      <h1>Landscaping Projects</h1>
+      <p>Browse recent landscaping, hardscaping, xeriscaping, turf, irrigation, and maintenance work.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="contact.html">Request a Free Estimate</a>
+        <a class="btn btn-secondary" href="portfolio.html">View Our Work</a>
+      </div>
+    </div>
+  </section>
+
+<section class="gallery-section">
+  <div class="section-title">
+    <div class="divider"></div>
+	<h2>Project Gallery</h2>
+  </div>
+
+  <div class="carousel" data-carousel>
+    <button class="carousel-arrow prev" data-prev>&lt;</button>
+
+    <div class="carousel-track" id="carouselTrack"></div>
+
+    <button class="carousel-arrow next" data-next>&gt;</button>
+
+    <div class="carousel-caption" data-caption></div>
+  </div>
+</section>
+
+<div class="lightbox" data-lightbox>
+  <button class="lightbox-close" data-close>&times;</button>
+  <button class="lightbox-arrow prev" data-lightbox-prev>&lt;</button>
+  <img src="" alt="" data-lightbox-img>
+  <button class="lightbox-arrow next" data-lightbox-next>&gt;</button>
+  <div class="lightbox-caption" data-lightbox-caption></div>
+</div>
+
+<section class="cta-banner" style="--cta-image:url('images/hero-portfolio.jpg')">
+  <div class="container">
+    <h2>Want a space like this?</h2>
+    <p>Reach out for a quote and start planning a project that fits your property and goals.</p>
+    <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+  </div>
+</section>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="small">© 2026 Cloud Burst Landscape LLC. All rights reserved.</div>
+      <div class="footer-links small">
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+const galleryImages = [
+  {
+    file: "20170725_153349.jpg",
+    alt: "Curved paver patio installation",
+    description: "Custom curved paver patio installation with clean edging and artificial turf integration."
+  },
+  {
+    file: "20210405_080004.jpg",
+    alt: "Commercial retaining wall and walkway",
+    description: "Commercial landscape retaining wall with clean concrete walkway access."
+  },
+  {
+    file: "20210406_153346.jpg",
+    alt: "Commercial landscape bed installation",
+    description: "Freshly prepared commercial landscape beds with retaining wall construction."
+  },
+  {
+    file: "20210406_153409.jpg",
+    alt: "Commercial sidewalk landscape project",
+    description: "Retaining wall and sidewalk improvements for a commercial property entrance."
+  },
+  {
+    file: "20210407_155628.jpg",
+    alt: "Stone retaining wall detail",
+    description: "Detailed stone retaining wall construction with integrated landscape bed shaping."
+  },
+  {
+    file: "20210407_155632.jpg",
+    alt: "Commercial retaining wall landscaping",
+    description: "Finished retaining wall installation surrounding a commercial landscape area."
+  },
+  {
+    file: "20210407_155642.jpg",
+    alt: "Raised landscape bed with retaining wall",
+    description: "Raised planting area with decorative retaining wall and clean hardscape finish."
+  },
+  {
+    file: "20210407_155650.jpg",
+    alt: "Finished retaining wall and walkway",
+    description: "Completed retaining wall project with surrounding sidewalk improvements."
+  },
+  {
+    file: "20210728_154333.jpg",
+    alt: "Commercial flower bed landscaping",
+    description: "Commercial flower bed installation with decorative rock and drought-tolerant plants."
+  },
+  {
+    file: "20210728_154336.jpg",
+    alt: "Modern landscape bed design",
+    description: "Modern commercial landscape bed with layered plants and decorative stone."
+  },
+  {
+    file: "20210728_154346.jpg",
+    alt: "Commercial landscape entrance",
+    description: "Fresh commercial landscaping designed to enhance curb appeal and accessibility."
+  },
+  {
+    file: "20230726_141119.jpg",
+    alt: "Front yard xeriscape design",
+    description: "Low-maintenance xeriscape front yard with decorative rock and drought-resistant plants."
+  },
+  {
+    file: "20230728_124147.jpg",
+    alt: "Front lawn and rock border",
+    description: "Fresh green lawn installation with decorative rock border and clean edging."
+  },
+  {
+    file: "20230728_124154.jpg",
+    alt: "Residential lawn transformation",
+    description: "Completed front yard lawn transformation with clean landscaping lines."
+  },
+  {
+    file: "20230728_124155.jpg",
+    alt: "Residential curb appeal landscaping",
+    description: "Front yard landscaping upgrade designed to improve curb appeal and functionality."
+  },
+  {
+    file: "20231122_145945.jpg",
+    alt: "Backyard patio construction",
+    description: "Early-stage backyard patio and hardscape construction project."
+  },
+  {
+    file: "20231128_101458.jpg",
+    alt: "Artificial turf installation before view",
+    description: "Before image of backyard prior to artificial turf installation."
+  },
+  {
+    file: "20231128_101536.jpg",
+    alt: "Backyard turf project before installation",
+    description: "Pre-installation view of a backyard artificial turf transformation project."
+  },
+  {
+    file: "20231128_101622.jpg",
+    alt: "Artificial grass project before stage",
+    description: "Backyard preparation phase before synthetic grass installation."
+  },
+  {
+    file: "20240504_142408.jpg",
+    alt: "Front yard landscape island",
+    description: "Decorative landscape island with drought-tolerant planting and stone border."
+  },
+  {
+    file: "20240504_142431.jpg",
+    alt: "Backyard patio and pathway",
+    description: "Custom backyard pathway and patio layout with decorative gravel finish."
+  },
+  {
+    file: "20240504_142433.jpg",
+    alt: "Decorative rock landscape design",
+    description: "Low-maintenance landscape design with decorative rock and planting beds."
+  },
+  {
+    file: "20240504_142451.jpg",
+    alt: "Stone pathway landscaping",
+    description: "Natural stone pathway integrated into a clean xeriscape backyard design."
+  },
+  {
+    file: "20240504_142452.jpg",
+    alt: "Backyard hardscape installation",
+    description: "Finished backyard hardscape with stone walkways and decorative gravel."
+  },
+  {
+    file: "20240711_181305.jpg",
+    alt: "Backyard grading preparation",
+    description: "Backyard preparation and grading before landscape installation."
+  },
+  {
+    file: "20240711_181314.jpg",
+    alt: "Landscape base preparation",
+    description: "Freshly prepared backyard base ready for sod and landscape installation."
+  },
+  {
+    file: "20240711_181320.jpg",
+    alt: "Residential landscape preparation",
+    description: "Site preparation work for a complete residential backyard transformation."
+  },
+  {
+    file: "20240713_170823.jpg",
+    alt: "New sod installation",
+    description: "Fresh sod installation with decorative rock border and modern edging."
+  },
+  {
+    file: "20240713_171036.jpg",
+    alt: "Completed backyard lawn installation",
+    description: "Completed backyard lawn installation with clean landscaping and fresh sod."
+  },
+  {
+    file: "20240730_163718.jpg",
+    alt: "Finished residential lawn project",
+    description: "Completed residential lawn and landscape installation with improved curb appeal."
+  },
+  {
+    file: "20241001_145759.jpg",
+    alt: "Concrete walkway installation",
+    description: "Concrete walkway installation integrated into a modern residential landscape."
+  },
+  {
+    file: "20241002_152119.jpg",
+    alt: "Fresh mulch landscape installation",
+    description: "Fresh mulch and landscape bed installation for a clean modern appearance."
+  },
+  {
+    file: "20251125_112403.jpg",
+    alt: "Modern stepping stone pathway",
+    description: "Modern stepping stone pathway with decorative rock drainage system."
+  },
+  {
+    file: "20251125_134650.jpg",
+    alt: "Decorative stone pathway detail",
+    description: "Decorative stepping stone pathway with dark rock accents and clean borders."
+  },
+  {
+    file: "20260512_113520.jpg",
+    alt: "Irrigation services",
+    description: "Underground irrigation valve system installation and maintenance work."
+  }
+];
+
+const track = document.getElementById("carouselTrack");
+
+galleryImages.forEach(image => {
+  const img = document.createElement("img");
+
+  img.src = `images/gallery/${image.file}`;
+  img.alt = image.alt;
+  img.dataset.description = image.description;
+
+  track.appendChild(img);
+});
+
+const images = [...document.querySelectorAll('.carousel-track img')];
+const caption = document.querySelector('[data-caption]');
+const lightbox = document.querySelector('[data-lightbox]');
+const lightboxImg = document.querySelector('[data-lightbox-img]');
+const lightboxCaption = document.querySelector('[data-lightbox-caption]');
+
+let current = 0;
+
+function updateCarousel() {
+  track.style.transform = `translateX(-${current * 100}%)`;
+  caption.textContent = images[current].dataset.description || '';
+}
+
+function move(direction) {
+  current = (current + direction + images.length) % images.length;
+  updateCarousel();
+}
+
+document.querySelector('[data-prev]').addEventListener('click', () => move(-1));
+document.querySelector('[data-next]').addEventListener('click', () => move(1));
+
+images.forEach((img, index) => {
+  img.addEventListener('click', () => {
+    current = index;
+    openLightbox();
+  });
+});
+
+function openLightbox() {
+  lightbox.classList.add('open');
+  lightboxImg.src = images[current].src;
+  lightboxCaption.textContent = images[current].dataset.description || '';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+}
+
+document.querySelector('[data-close]').addEventListener('click', closeLightbox);
+
+document.querySelector('[data-lightbox-prev]').addEventListener('click', () => {
+  move(-1);
+  openLightbox();
+});
+
+document.querySelector('[data-lightbox-next]').addEventListener('click', () => {
+  move(1);
+  openLightbox();
+});
+
+updateCarousel();
+</script>
+  <script>
+  document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function(){
+    document.querySelector('.site-header')?.classList.toggle('menu-open');
+  });
+</script>
+</body>
+</html>

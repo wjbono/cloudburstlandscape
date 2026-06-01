@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Burst Landscape LLC | Contact</title>
+  <meta name="description" content="Cloud Burst Landscape LLC designs, builds, and maintains premium outdoor spaces with a modern, high-contrast aesthetic." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Cloud Burst Landscape LLC Home">
+        <img src="images/logo.jpg" alt="Cloud Burst Landscape LLC logo" />
+      </a>
+	  <button class="mobile-menu-toggle" type="button" aria-label="Open navigation">
+		☰
+	  </button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="">Home</a>
+<a href="services.html" class="">Services</a>
+<a href="portfolio.html" class="">Portfolio</a>
+<a href="about.html" class="">About</a>
+<a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="contact.html">Get a Quote</a>
+    </div>
+  </header>
+
+  <section class="hero" style="--hero-image:url('images/hero-contact.jpg')">
+    <div class="hero-content">
+      <div class="kicker">Contact</div>
+      <h1>Start the conversation</h1>
+      <p>Tell us about your project and we’ll follow up to discuss the best next step.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="contact.html">Request a Free Estimate</a>
+        <a class="btn btn-secondary" href="portfolio.html">View Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  
+<section class="section">
+  <div class="container split">
+    <div class="panel">
+      <div class="section-title" style="text-align:left; margin-bottom:0">
+        <div class="divider" style="margin:0 0 18px"></div>
+        <h2>Request a Quote</h2>
+      </div>
+      <form action="https://formspree.io/f/xbdbqzrv" method="POST">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required/>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required/>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required/>
+          </div>
+          <div class="field">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option>Landscape Design</option>
+              <option>Maintenance</option>
+              <option>Hardscaping</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="field" style="margin-top:16px">
+          <label for="details">Project Details</label>
+          <textarea id="details" name="details" placeholder="Tell us about your project." required></textarea>
+        </div>
+        <div style="margin-top:18px">
+          <button class="btn btn-primary" type="submit">Submit Request</button>
+        </div>
+      </form>
+    </div>
+    <div class="panel">
+      <div class="media" style="border-radius:16px"><img src="images/contact-image.jpg" alt="Outdoor living space contact image" /></div>
+      <div class="contact-cards">
+        <div class="contact-card"><strong>Phone</strong><div class="small">(719) 453-5419</div></div>
+        <div class="contact-card"><strong>Hours</strong><div class="small">Mon–Fri, 8am–5pm</div></div>
+      </div>
+      <ul class="list">
+        <li>Serving El Paso County and surrounding counties</li>
+        <li>Commercial and residential services</li>
+        <li>Military discounts available</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="small">© 2026 Cloud Burst Landscape LLC. All rights reserved.</div>
+      <div class="footer-links small">
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function(){
+    document.querySelector('.site-header')?.classList.toggle('menu-open');
+  });
+</script>
+</body>
+</html>
